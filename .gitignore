@@ -107,8 +107,9 @@ InitTestScene*.unity*
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
 
-# Project: the delivered APK is committed under /Builds (other build output stays ignored)
+# Project: the delivered APK is committed (root or /Builds); other build output stays ignored
 !/[Bb]uilds/*.apk
+!/*.apk
 
 # Unity auto-recovery scenes
 /[Aa]ssets/_Recovery*
