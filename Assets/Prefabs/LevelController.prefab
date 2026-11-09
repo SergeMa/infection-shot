@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400}
+  - component: {fileID: 11400}
+  m_Layer: 0
+  m_Name: LevelController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf72de50916342eedf4a5b6c7d8e9fa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game.Runtime::Game.Simple.LevelController
+  player: {fileID: 0}
+  door: {fileID: 0}
+  obstaclePrefab: {fileID: 11400, guid: f3b61294d5a766232c8e9fa0b1c2d3e9, type: 3}
+  gameController: {fileID: 0}
+  fieldSize: {x: 10, y: 22}
+  obstacleCount: 40
+  minSpacing: 1
+  safeRadius: 3
+  seed: 0
+  maxAttemptsPerObstacle: 30
+  sizeReserve: 1.2
+  maxStartSize: 6
+  sizePrecision: 0.02
+  shotStep: 0.02
+  maxLayoutAttempts: 10
